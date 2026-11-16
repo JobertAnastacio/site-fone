@@ -7,6 +7,7 @@
 
 *{ padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 body{
@@ -24,32 +25,38 @@ main{
 }
 article#part1{
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
     margin: auto;
-    width: 70vw;
     height: 700px;
-    background-color: brown;
     padding: 10px;
     margin: 10px;
 }
 section{
-    flex-direction: row;
-    width: 450px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
     height: 450px;
-    background-color: rgb(0, 255, 76);
+    
+}
+div{
+    margin: 15px;
 }
 #fone{
-    flex-direction: row-reverse;
-    width: 450px;
-    height: 450px;
-    background-color: blue;
+    flex: 0 0 auto;
+    height: 430px;
+    
 }
 
 article > section > h1{
     padding: 10px;
     margin: 10px;
-    font-size: 3.5em;
+    width: 500px;
+    font-size: 4em;
 }
-article > section > a{
+article > section > div > a{
     background-color: white;
     margin: 5px;
     padding: 10px;
@@ -57,4 +64,8 @@ article > section > a{
     border-radius: 50px;
     text-decoration: none;
 }
-
+ @media screen (max-width:300px;){
+    article#part1{
+        flex-flow: column nowrap
+    }
+ }
