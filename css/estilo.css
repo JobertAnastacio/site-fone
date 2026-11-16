@@ -20,19 +20,22 @@ header{
 }
 main{
     padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 30px;
     margin: 10px;
     margin: auto;
 }
 article#part1{
+    background-color: transparent;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: flex-start;
     align-items: center;
-    margin: auto;
-    height: 700px;
-    padding: 10px;
-    margin: 10px;
+    padding: 30px;
+    margin: 30px;
 }
 section{
     display: flex;
@@ -65,11 +68,54 @@ article > section > div > a{
     border-radius: 50px;
     text-decoration: none;
 }
+article#part2{
+    background-color: transparent;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
+}
+article#part2 > section > h1{
+    font-size: 3em;
+    text-align: left;
+}
+article#part2 > section > p{
+    text-align: justify;
+    line-height: 20px;
+    max-width: 450px;
+}
+section#txt{
+    padding: 10px;
+}
+section#img{
+    background-color: aliceblue;
+    border-radius: 0px 150px 0px 0px;
+    width: 520px;
+    height: 700px;
+}
 
-@media screen and (min-width: 200px) {
+/* versão mobile */
+@media screen and (max-width: 600px) {
+    article#part1{
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    div{
+        text-align: center;
+    }
+    article > section > div > a{
+        text-align: center;
+        
+    }
+
     article > section > h1{
-        color: yellow;
         font-size: 3.2em;
         width: 400px;
+        padding-bottom: 10px;
     }
 }
