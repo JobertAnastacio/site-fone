@@ -91,7 +91,7 @@ article#part2 > section > p{
 section#txt{
     padding: 10px;
 }
-section#img{
+section#img, img#img{
     background-color: aliceblue;
     border-radius: 0px 150px 0px 0px;
     width: 520px;
