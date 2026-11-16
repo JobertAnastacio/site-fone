@@ -107,7 +107,7 @@ article#part3 > section{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    margin: 20px;
+    margin: 70px;
 }
 img.micro{
     display: block;
@@ -119,6 +119,7 @@ img.micro{
 }
 h1, article#part3 > p{
     text-align: center;
+    
 }
 article#part3 > section > div{
     background-color: aliceblue;
